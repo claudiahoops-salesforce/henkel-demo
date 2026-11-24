@@ -12,116 +12,117 @@
   var pt = function (label, code, kids) { return [label, P(R + code), kids || []]; };
 
   var NAV = [
-    ["Products", P("industrial-root-producttype"), [
-      pt("Compounds for electronics", "8", [pt("Conformal coatings","8.8"),pt("Encapsulants","8.2"),pt("Glob top materials","8.4"),pt("Injection molding compounds","8.6"),pt("Potting compounds","8.7"),pt("Underfills","8.9")]),
+    ["Produkte", P("industrial-root-producttype"), [
+      pt("Vergussmassen für die Elektronik", "8", [pt("Schutzlacke","8.8"),pt("Verkapselungsmaterialien","8.2"),pt("Glob-Top-Materialien","8.4"),pt("Spritzgussmassen","8.6"),pt("Vergussmassen","8.7"),pt("Underfills","8.9")]),
       pt("Equipment", "6", [
-        pt("Automated robotic systems","6.8",[pt("Robot parts and accessories","6.8.5"),pt("Robot systems","6.8.6")]),
-        pt("Consumables and supplies","6.7",[pt("Dispensing needles and tips","6.7.1"),pt("Mixing nozzles","6.7.2"),pt("Tubing, fittings and other accessories","6.7.4")]),
-        pt("Dispense systems","6.1",[pt("Anaerobic dispense systems","6.1.1"),pt("Bottle dispense systems","6.1.3"),pt("Cartridge adapters and accessories","6.1.14"),
-          pt("Cartridge dispensing systems","6.1.4",[pt("Dual cartridge dispensing systems","6.1.4.1"),pt("Single cartridge dispense systems","6.1.4.2")]),
-          pt("Controllers, reservoirs and dispense valves","6.1.16",[pt("Controllers and dispense reservoirs","6.1.16.1"),pt("Dispense valves","6.1.16.2")]),
-          pt("Parts and accessories for dispense systems","6.1.12"),pt("Process control and monitoring systems for dispense systems","6.1.7"),pt("Syringe dispense systems","6.1.8"),pt("Volumetric dispensing systems","6.1.10")]),
-        pt("Light curing systems","6.2",[
-          pt("LED light curing systems","6.2.1",[pt("LED flood curing systems","6.2.1.1"),pt("LED spot curing and handheld systems","6.2.1.3")]),
-          pt("Parts and accessories for light curing systems","6.2.4"),pt("Process control and monitoring systems for light curing systems","6.2.3"),pt("UV and visible light curing systems","6.2.2")])]),
-      pt("Industrial adhesives", "1", [pt("Adhesive accelerators","1.25"),pt("Adhesive activators","1.24"),pt("Adhesive primers","1.23"),pt("Contact adhesives","1.21"),pt("Electrically conductive adhesives","1.1"),pt("Electrically non-conductive adhesives","1.6"),pt("Hot melt adhesives","1.4"),pt("Industrial adhesive tapes","1.20"),pt("Instant adhesives","1.5"),pt("Light curing adhesives","1.15"),pt("Pressure sensitive adhesives","1.7"),pt("Retaining compounds","1.9"),pt("Structural adhesives","1.11"),pt("Surface mount adhesives","1.12"),pt("Threadlockers","1.13"),pt("Water based adhesives","1.16"),pt("Windshield adhesives","1.17")]),
-      pt("Industrial cleaners", "2", [pt("Electrical cleaners","2.3"),pt("General industrial cleaners","2.4"),pt("Hand cleaners","2.8"),pt("Hot melt cleaners","2.2"),
-        pt("Industrial cleaners for surface treatments","2.10",[pt("Maintenance cleaners","2.10.7")]),
-        pt("Industrial degreasers","2.1",[pt("Industrial degreasers for adhesives","2.1.1")]),
-        pt("Metal process cleaners","2.6"),pt("Mold release cleaners","2.7"),pt("Rust preventatives","2.9")]),
-      pt("Industrial coatings", "3", [pt("Body fillers","3.13"),pt("Corrosion protectors","3.14"),pt("Floor coatings","3.5"),pt("Industrial inks and coatings","3.6"),pt("Mold release agents","3.7"),pt("Protective coatings","3.10"),pt("Sound dampers","3.15"),pt("Wear resistant coatings","3.12")]),
-      pt("Industrial lubricants", "7", [pt("Anti-seize lubricants","7.1"),pt("Machining lubricants","7.4"),
-        pt("Metal forming lubricants","7.2",[
-          pt("Casting lubricants","7.2.2",[pt("High pressure casting lubricants","7.2.2.1"),pt("Low pressure casting lubricants","7.2.2.2")]),
-          pt("Forging lubricants","7.2.1",[pt("Forging ferrous lubricants","7.2.1.1")])]),
-        pt("Petroleum based greases","7.6"),pt("Specialty oils and lubricants","7.7"),pt("Synthetic lubricants","7.8")]),
-      pt("Industrial repair materials", "9", [pt("Grout materials","9.2"),pt("Metal rebuilding materials","9.4"),pt("O-ring repair materials","9.5"),pt("Pipe repair materials","9.6")]),
-      pt("Industrial sealants", "10", [pt("Flexible sealants","10.1"),pt("Floor sealants","10.2"),pt("Gasketing sealants","10.3"),pt("Mold release sealants","10.4"),pt("Noise, vibration and harshness (NVH) sealants","10.9"),pt("Specialty sealants","10.10"),pt("Thread sealants","10.7")]),
-      pt("Surface treatments", "12", [pt("Autodeposition coatings","12.9"),
-        pt("Conversion coatings","12.1",[pt("Chrome-free conversion coatings","12.1.1")]),
-        pt("Corrosion inhibitors","12.6"),pt("Industrial degreasers for surface treatments","12.14"),pt("Industrial pretreatment conditioners","12.4"),pt("Paint strippers","12.7"),pt("Polishing compounds","12.8")]),
-      pt("Thermal management materials", "13", [pt("Phase change materials","13.1"),pt("Thermal GAP PAD Materials","13.6"),pt("Thermal gap fillers","13.5"),pt("Thermally conductive adhesives","13.7")])
+        pt("Automatisierte Robotersysteme","6.8",[pt("Roboterteile und Zubehör","6.8.5"),pt("Robotersysteme","6.8.6")]),
+        pt("Verbrauchsmaterial und Zubehör","6.7",[pt("Dosiernadeln und -spitzen","6.7.1"),pt("Mischdüsen","6.7.2"),pt("Schläuche, Fittings und weiteres Zubehör","6.7.4")]),
+        pt("Dosiersysteme","6.1",[pt("Dosiersysteme für anaerobe Klebstoffe","6.1.1"),pt("Flaschendosiersysteme","6.1.3"),pt("Kartuschenadapter und Zubehör","6.1.14"),
+          pt("Kartuschendosiersysteme","6.1.4",[pt("Zweikomponenten-Kartuschendosiersysteme","6.1.4.1"),pt("Einzelkartuschen-Dosiersysteme","6.1.4.2")]),
+          pt("Steuerungen, Behälter und Dosierventile","6.1.16",[pt("Steuerungen und Dosierbehälter","6.1.16.1"),pt("Dosierventile","6.1.16.2")]),
+          pt("Teile und Zubehör für Dosiersysteme","6.1.12"),pt("Prozesskontroll- und Überwachungssysteme für Dosiersysteme","6.1.7"),pt("Spritzendosiersysteme","6.1.8"),pt("Volumetrische Dosiersysteme","6.1.10")]),
+        pt("Lichthärtungssysteme","6.2",[
+          pt("LED-Lichthärtungssysteme","6.2.1",[pt("LED-Flächenhärtungssysteme","6.2.1.1"),pt("LED-Punkthärtungs- und Handsysteme","6.2.1.3")]),
+          pt("Teile und Zubehör für Lichthärtungssysteme","6.2.4"),pt("Prozesskontroll- und Überwachungssysteme für Lichthärtungssysteme","6.2.3"),pt("UV- und Tageslicht-Härtungssysteme","6.2.2")])]),
+      pt("Industrieklebstoffe", "1", [pt("Klebstoff-Beschleuniger","1.25"),pt("Klebstoff-Aktivatoren","1.24"),pt("Haftvermittler","1.23"),pt("Kontaktklebstoffe","1.21"),pt("Elektrisch leitfähige Klebstoffe","1.1"),pt("Elektrisch nicht leitfähige Klebstoffe","1.6"),pt("Schmelzklebstoffe","1.4"),pt("Industrielle Klebebänder","1.20"),pt("Sekundenkleber","1.5"),pt("Lichthärtende Klebstoffe","1.15"),pt("Haftklebstoffe","1.7"),pt("Fügeklebstoffe","1.9"),pt("Strukturklebstoffe","1.11"),pt("SMD-Klebstoffe","1.12"),pt("Schraubensicherungen","1.13"),pt("Wasserbasierte Klebstoffe","1.16"),pt("Scheibenklebstoffe","1.17")]),
+      pt("Industriereiniger", "2", [pt("Elektroreiniger","2.3"),pt("Allgemeine Industriereiniger","2.4"),pt("Handreiniger","2.8"),pt("Schmelzklebstoff-Reiniger","2.2"),
+        pt("Industriereiniger für Oberflächenbehandlungen","2.10",[pt("Wartungsreiniger","2.10.7")]),
+        pt("Industrielle Entfetter","2.1",[pt("Industrielle Entfetter für Klebstoffe","2.1.1")]),
+        pt("Reiniger für die Metallbearbeitung","2.6"),pt("Formreiniger","2.7"),pt("Rostschutzmittel","2.9")]),
+      pt("Industriebeschichtungen", "3", [pt("Karosseriespachtel","3.13"),pt("Korrosionsschutzmittel","3.14"),pt("Bodenbeschichtungen","3.5"),pt("Industrielle Druckfarben und Beschichtungen","3.6"),pt("Trennmittel","3.7"),pt("Schutzbeschichtungen","3.10"),pt("Schalldämpfer","3.15"),pt("Verschleißfeste Beschichtungen","3.12")]),
+      pt("Industrieschmierstoffe", "7", [pt("Anti-Seize-Schmierstoffe","7.1"),pt("Zerspanungsschmierstoffe","7.4"),
+        pt("Umformschmierstoffe","7.2",[
+          pt("Gießschmierstoffe","7.2.2",[pt("Hochdruck-Gießschmierstoffe","7.2.2.1"),pt("Niederdruck-Gießschmierstoffe","7.2.2.2")]),
+          pt("Schmiedeschmierstoffe","7.2.1",[pt("Schmiedeschmierstoffe für Eisenwerkstoffe","7.2.1.1")])]),
+        pt("Fette auf Mineralölbasis","7.6"),pt("Spezialöle und -schmierstoffe","7.7"),pt("Synthetische Schmierstoffe","7.8")]),
+      pt("Industrielle Reparaturwerkstoffe", "9", [pt("Vergussmörtel","9.2"),pt("Metallaufbauwerkstoffe","9.4"),pt("O-Ring-Reparaturwerkstoffe","9.5"),pt("Rohrreparaturwerkstoffe","9.6")]),
+      pt("Industriedichtstoffe", "10", [pt("Flexible Dichtstoffe","10.1"),pt("Bodendichtstoffe","10.2"),pt("Flächendichtungen","10.3"),pt("Formtrenn-Dichtstoffe","10.4"),pt("NVH-Dichtstoffe (Geräusch, Vibration, Rauheit)","10.9"),pt("Spezialdichtstoffe","10.10"),pt("Gewindedichtungen","10.7")]),
+      pt("Oberflächenbehandlungen", "12", [pt("Autophoretische Beschichtungen","12.9"),
+        pt("Konversionsschichten","12.1",[pt("Chromfreie Konversionsschichten","12.1.1")]),
+        pt("Korrosionsinhibitoren","12.6"),pt("Industrielle Entfetter für Oberflächenbehandlungen","12.14"),pt("Industrielle Vorbehandlungsmittel","12.4"),pt("Lackentferner","12.7"),pt("Polierpasten","12.8")]),
+      pt("Wärmemanagement-Materialien", "13", [pt("Phasenwechselmaterialien","13.1"),pt("Thermal GAP PAD Materialien","13.6"),pt("Thermische Gap-Filler","13.5"),pt("Wärmeleitende Klebstoffe","13.7")])
     ]],
 
-    ["Applications", "/de/en/applications.html", [
-      ["Assembly automation", A("equipment"), [["Automated robotic systems",A("equipment/automated-robotic-systems")],["Consumables and supplies",A("equipment/consumables-and-supplies")],["Dispense systems",A("equipment/dispense-systems")],["Light-curing systems",A("equipment/light-curing-systems")]]],
-      ["Collision repair solutions", A("collision-repair-solutions")],
-      ["Electronic component bonding solutions", A("electronic-component-bonding-solutions"), [["Assembly films",A("electronic-component-bonding-solutions/assembly-films")],["Electrically conductive adhesives",A("electronic-component-bonding-solutions/electrically-conductive-adhesives")],["Non-conductive adhesives",A("electronic-component-bonding-solutions/non-conductive-adhesives")]]],
-      ["Electronic component protection solutions", A("electronic-component-protection-solutions"), [["Board-level encapsulants",A("electronic-component-protection-solutions/board-level-encapsulants")],["Conformal coatings",A("electronic-component-protection-solutions/conformal-coatings")],["Low pressure molding",A("electronic-component-protection-solutions/low-pressure-molding")],["Potting compounds",A("electronic-component-protection-solutions/potting-compounds")],["Underfills",A("electronic-component-protection-solutions/underfills")]]],
-      ["Gasketing", A("gasketing")],
-      ["Instant component bonding", A("instant-component-bonding")],
-      ["Metal processing solutions", A("metal-processing-solutions")],
-      ["Packaging solutions", A("packaging-solutions")],
-      ["Printed electronics material solutions", A("printed-electronics-material-solutions")],
-      ["Retaining", A("retaining-compounds")],
-      ["Smart maintenance (IIoT)", A("smart-maintenance-iiot"), [["LOCTITE® Pulse rotating equipment",A("smart-maintenance-iiot/loctite-pulse-rotating-equipment")],["LOCTITE® Pulse Smart Flange","/de/en/navigation/applications/smart-maintenance-iiot/loctite-pulse-smart-flange.html"],["LOCTITE® Pulse Smart Steam Trap",A("smart-maintenance-iiot/loctite-pulse-smart-steam-trap")]]],
-      ["Structural bonding solutions", A("structural-bonding-solutions")],
-      ["Thermal management", A("thermal-management-materials"), [["Thermal GAP PAD® materials",A("thermal-management-materials/thermal-gap-pad-materials")],["Thermal gap fillers",A("thermal-management-materials/thermal-gap-fillers")],["Thermal gels",A("thermal-management-materials/thermal-gel")],["Thermal SIL PAD® materials",A("thermal-management-materials/thermal-sil-pad-materials")],["Phase change materials",A("thermal-management-materials/phase-change-materials")],["Thermally conductive grease",A("thermal-management-materials/thermally-conductive-grease")],["Thermally conductive adhesives",A("thermal-management-materials/thermally-conductive-adhesives")]]],
-      ["Threadlocking", A("threadlockers")],
-      ["Thread sealing", A("thread-sealing")],
-      ["Wear prevention", A("wear-prevention")],
-      ["Windscreen replacement solutions", A("windscreen-bonding-solutions")],
-      ["Wirebond semiconductor packaging", A("wirebond-semiconductor-packaging"), [["Die attach film",A("wirebond-semiconductor-packaging/die-attach-film")],["Die attach paste",A("wirebond-semiconductor-packaging/die-attach-paste")],["Printable B-stage die attach adhesives",A("wirebond-semiconductor-packaging/printable-b-stage-die-attach-adhesives")]]],
-      ["Advanced semiconductor packaging", A("advanced-semiconductor-packaging"), [["Lid and stiffener attach adhesives",A("advanced-semiconductor-packaging/lid-and-stiffener-attach-adhesives")],["EMI shielding",A("advanced-semiconductor-packaging/emi-shielding")],["Liquid compression molding solutions",A("advanced-semiconductor-packaging/liquid-compression-molding-solutions")]]]
+    ["Anwendungen", "/de/en/applications.html", [
+      ["Montageautomatisierung", A("equipment"), [["Automatisierte Robotersysteme",A("equipment/automated-robotic-systems")],["Verbrauchsmaterial und Zubehör",A("equipment/consumables-and-supplies")],["Dosiersysteme",A("equipment/dispense-systems")],["Lichthärtungssysteme",A("equipment/light-curing-systems")]]],
+      ["Lösungen für die Unfallreparatur", A("collision-repair-solutions")],
+      ["Lösungen zum Kleben elektronischer Bauteile", A("electronic-component-bonding-solutions"), [["Montagefolien",A("electronic-component-bonding-solutions/assembly-films")],["Elektrisch leitfähige Klebstoffe",A("electronic-component-bonding-solutions/electrically-conductive-adhesives")],["Nicht leitfähige Klebstoffe",A("electronic-component-bonding-solutions/non-conductive-adhesives")]]],
+      ["Lösungen zum Schutz elektronischer Bauteile", A("electronic-component-protection-solutions"), [["Verkapselungen auf Platinenebene",A("electronic-component-protection-solutions/board-level-encapsulants")],["Schutzlacke",A("electronic-component-protection-solutions/conformal-coatings")],["Niederdruckspritzguss",A("electronic-component-protection-solutions/low-pressure-molding")],["Vergussmassen",A("electronic-component-protection-solutions/potting-compounds")],["Underfills",A("electronic-component-protection-solutions/underfills")]]],
+      ["Dichtungen", A("gasketing")],
+      ["Sofortverklebung von Bauteilen", A("instant-component-bonding")],
+      ["Lösungen für die Metallverarbeitung", A("metal-processing-solutions")],
+      ["Verpackungslösungen", A("packaging-solutions")],
+      ["Materiallösungen für gedruckte Elektronik", A("printed-electronics-material-solutions")],
+      ["Fügen von Welle-Nabe-Verbindungen", A("retaining-compounds")],
+      ["Smarte Wartung (IIoT)", A("smart-maintenance-iiot"), [["LOCTITE® Pulse für rotierende Anlagen",A("smart-maintenance-iiot/loctite-pulse-rotating-equipment")],["LOCTITE® Pulse Smart Flange","/de/en/navigation/applications/smart-maintenance-iiot/loctite-pulse-smart-flange.html"],["LOCTITE® Pulse Smart Steam Trap",A("smart-maintenance-iiot/loctite-pulse-smart-steam-trap")]]],
+      ["Lösungen für strukturelles Kleben", A("structural-bonding-solutions")],
+      ["Wärmemanagement", A("thermal-management-materials"), [["Thermal GAP PAD® Materialien",A("thermal-management-materials/thermal-gap-pad-materials")],["Thermische Gap-Filler",A("thermal-management-materials/thermal-gap-fillers")],["Thermische Gele",A("thermal-management-materials/thermal-gel")],["Thermal SIL PAD® Materialien",A("thermal-management-materials/thermal-sil-pad-materials")],["Phasenwechselmaterialien",A("thermal-management-materials/phase-change-materials")],["Wärmeleitfett",A("thermal-management-materials/thermally-conductive-grease")],["Wärmeleitende Klebstoffe",A("thermal-management-materials/thermally-conductive-adhesives")]]],
+      ["Schraubensicherung", A("threadlockers")],
+      ["Gewindedichtung", A("thread-sealing")],
+      ["Verschleißschutz", A("wear-prevention")],
+      ["Lösungen für den Scheibenaustausch", A("windscreen-bonding-solutions")],
+      ["Wirebond-Halbleiter-Packaging", A("wirebond-semiconductor-packaging"), [["Die-Attach-Folie",A("wirebond-semiconductor-packaging/die-attach-film")],["Die-Attach-Paste",A("wirebond-semiconductor-packaging/die-attach-paste")],["Druckbare B-Stage-Die-Attach-Klebstoffe",A("wirebond-semiconductor-packaging/printable-b-stage-die-attach-adhesives")]]],
+      ["Advanced Semiconductor Packaging", A("advanced-semiconductor-packaging"), [["Klebstoffe für Lid- und Stiffener-Montage",A("advanced-semiconductor-packaging/lid-and-stiffener-attach-adhesives")],["EMV-Abschirmung",A("advanced-semiconductor-packaging/emi-shielding")],["Lösungen für Liquid Compression Molding",A("advanced-semiconductor-packaging/liquid-compression-molding-solutions")]]]
     ]],
 
     ["Services", "/de/en/services.html", [
-      ["Engineering services", S("engineering"), [["Finite element analysis",S("engineering/finite-element-analysis")],["Material testing and analytics",S("engineering/material-testing-and-analytical-services")],["Packaging recyclab",S("engineering/packaging-recyclab")]]],
-      ["IoT services", S("iot"), [["BONDERITE® LineguardX services",S("iot/bonderite-lineguardx")]]],
-      ["Machine and equipment services", S("equipment-services"), [
-        ["LOCTITE® equipment services", S("equipment-services/loctite"), [["Equipment trade-ins",S("equipment-services/loctite/equipment-trade-ins")],["Factory repair",S("equipment-services/loctite/factory-repair")],["Field service",S("equipment-services/loctite/field-services")]]],
-        ["SONDERHOFF machine services", S("equipment-services/sonderhoff-machine-services")]]],
-      ["Manufacturing and maintenance services", S("manufacturing-and-maintenance-services"), [["Maintenance reliability services",S("manufacturing-and-maintenance-services/maintenance-reliability")],["Product design and manufacturing services",S("manufacturing-and-maintenance-services/product-design-and-manufacturing")],["SONDERHOFF contract manufacturing",S("manufacturing-and-maintenance-services/sonderhoff-contract-manufacturing")]]]
+      ["Engineering-Services", S("engineering"), [["Finite-Elemente-Analyse",S("engineering/finite-element-analysis")],["Materialprüfung und Analytik",S("engineering/material-testing-and-analytical-services")],["Packaging Recyclab",S("engineering/packaging-recyclab")]]],
+      ["IoT-Services", S("iot"), [["BONDERITE® LineguardX Services",S("iot/bonderite-lineguardx")]]],
+      ["Maschinen- und Anlagenservices", S("equipment-services"), [
+        ["LOCTITE® Equipment-Services", S("equipment-services/loctite"), [["Inzahlungnahme von Equipment",S("equipment-services/loctite/equipment-trade-ins")],["Werksreparatur",S("equipment-services/loctite/factory-repair")],["Außendienst-Service",S("equipment-services/loctite/field-services")]]],
+        ["SONDERHOFF Maschinenservices", S("equipment-services/sonderhoff-machine-services")]]],
+      ["Fertigungs- und Wartungsservices", S("manufacturing-and-maintenance-services"), [["Services für zuverlässige Instandhaltung",S("manufacturing-and-maintenance-services/maintenance-reliability")],["Produktdesign- und Fertigungsservices",S("manufacturing-and-maintenance-services/product-design-and-manufacturing")],["SONDERHOFF Lohnfertigung",S("manufacturing-and-maintenance-services/sonderhoff-contract-manufacturing")]]]
     ]],
 
-    ["Brands", "/de/en/our-brands.html", [
+    ["Marken", "/de/en/our-brands.html", [
       ["AQUENCE®",B("aquence")],["BONDERITE®",B("bonderite")],["LOCTITE®",B("loctite")],["TECHNOMELT®",B("technomelt")],["TEROSON®",B("teroson")]
     ]],
 
-    ["Industries", "/de/en/industries.html", [
-      ["Aerospace", I("aerospace"), [["Aerospace MRO",I("aerospace/aerospace-maintenance-repair-overhaul")],["Aviation",I("aerospace/aviation")],["Space",I("aerospace/space")],["Urban air mobility",I("aerospace/urban-air-mobility")]]],
-      ["Automotive", I("automotive"), [["Automotive electronics",I("automotive/automotive-electronics")],["Automotive interior and exterior",I("automotive/automotive-interior-and-exterior")],["Automotive vehicle body",I("automotive/automotive-vehicle-body")],["E-mobility",I("automotive/e-mobility")],["Powertrain and chassis",I("automotive/powertrain-and-chassis")]]],
-      ["Automotive aftermarket", I("automotive-aftermarket")],
-      ["Building and construction components", I("building-construction-components"), [["Building components",I("building-construction-components/building-components")],["Engineered wood",I("building-construction-components/engineered-wood")]]],
-      ["Consumer electronics", I("consumer-electronics"), [["Cameras, sensors and modules",I("consumer-electronics/cameras-sensors-and-modules")],["Mobile devices",I("consumer-electronics/mobile-devices")],["Smart home devices",I("consumer-electronics/smart-home-devices")],["Storage and processors",I("consumer-electronics/storage-and-processors")],["Wearable devices",I("consumer-electronics/wearable-devices")]]],
-      ["Data and telecommunications", I("data-and-telecommunications"), [["Broadband connectivity",I("data-and-telecommunications/broadband-connectivity")],["Data centre",I("data-and-telecommunications/data-center")],["Optical",I("data-and-telecommunications/optical")]]],
-      ["Furniture and interiors", I("furniture-interiors")],
-      ["Industrial manufacturing", I("industrial-manufacturing"), [["Filtration",I("industrial-manufacturing/filtration")],["Home appliances",I("industrial-manufacturing/home-appliances")],["Heavy equipment",I("industrial-manufacturing/heavy-equipment")]]],
-      ["Maintenance and repair", I("industrial-maintenance-repair")],
-      ["Medical", I("medical"), [["Medical disposables",I("medical/medical-disposables")],["Medical equipment",I("medical/medical-equipment")],["Medical filtration",I("medical/medical-filtration")],["Medical wearables",I("medical/medical-wearables")]]],
-      ["Metals", I("metals"), [["Aluminium coil",I("metals/aluminum-coil")],["Aluminium components",I("metals/aluminum-components")],["Stainless steel coil",I("metals/stainless-steel-coil")],["Steel coil",I("metals/steel-coil")],["Steel components",I("metals/steel-components")]]],
-      ["Packaging and converting", I("packaging-and-converting"), [["Consumer goods packaging",I("packaging-and-converting/consumer-goods-packaging")],["E-commerce",I("packaging-and-converting/e-commerce")],["Flexible packaging",I("packaging-and-converting/flexible-packaging")],["Metal packaging",I("packaging-and-converting/metal-packaging")],["Paper solutions",I("packaging-and-converting/paper-solutions")],["Tapes, labels and self-adhesive graphic films",I("packaging-and-converting/tapes-labels-self-adhesive-graphic-films")],["Packaging coatings",I("packaging-and-converting/packaging-coatings")]]],
-      ["Personal hygiene", I("personal-hygiene"), [["Adult incontinence",I("personal-hygiene/adult-incontinence")],["Baby nappies",I("personal-hygiene/baby-diapers")],["Feminine care",I("personal-hygiene/feminine-care")],["Medical protective wear",I("personal-hygiene/medical-protective-wear")],["Tissues and towels",I("personal-hygiene/tissues-and-towels")]]],
-      ["Power", I("power"), [["Alternative energy conversion and storage",I("power/alternative-energy-conversion-and-storage")],["EV charging infrastructure",I("power/ev-charging-infrastructure")],["Hydrogen solutions",I("power/hydrogen-solutions")],["Power supplies",I("power/power-supplies")],["Solar",I("power/solar")],["Wind",I("power/wind")]]],
-      ["Semiconductor", I("semiconductor"), [["Semiconductor packaging",I("semiconductor/semiconductor-packaging")],["Semiconductors for data center",I("semiconductor/semiconductors-for-data-center")],["Semiconductors for telecom",I("semiconductor/semiconductors-for-telecom")],["Semiconductors for automotive",I("semiconductor/semiconductors-for-automotive")]]],
-      ["Sports & fashion", I("sports-and-fashion"), [["Formal shoes",I("sports-and-fashion/dress-shoes")],["Fashion",I("sports-and-fashion/fashion")],["Sports shoes",I("sports-and-fashion/sports-shoes")]]],
-      ["Transportation", I("transportation"), [["Mass transit",I("transportation/mass-transit")],["Speciality vehicles",I("transportation/specialty-vehicles")]]],
-      ["Humanoid robotics", I("humanoid-robotics")]
+    ["Branchen", "/de/en/industries.html", [
+      ["Luft- und Raumfahrt", I("aerospace"), [["Luftfahrt-MRO",I("aerospace/aerospace-maintenance-repair-overhaul")],["Luftfahrt",I("aerospace/aviation")],["Raumfahrt",I("aerospace/space")],["Urbane Luftmobilität",I("aerospace/urban-air-mobility")]]],
+      ["Automobil", I("automotive"), [["Automobilelektronik",I("automotive/automotive-electronics")],["Fahrzeuginterieur und -exterieur",I("automotive/automotive-interior-and-exterior")],["Fahrzeugaufbau",I("automotive/automotive-vehicle-body")],["E-Mobilität",I("automotive/e-mobility")],["Antriebsstrang und Fahrwerk",I("automotive/powertrain-and-chassis")]]],
+      ["Automobil-Aftermarket", I("automotive-aftermarket")],
+      ["Bau- und Konstruktionskomponenten", I("building-construction-components"), [["Bauteile",I("building-construction-components/building-components")],["Holzwerkstoffe",I("building-construction-components/engineered-wood")]]],
+      ["Unterhaltungselektronik", I("consumer-electronics"), [["Kameras, Sensoren und Module",I("consumer-electronics/cameras-sensors-and-modules")],["Mobilgeräte",I("consumer-electronics/mobile-devices")],["Smart-Home-Geräte",I("consumer-electronics/smart-home-devices")],["Speicher und Prozessoren",I("consumer-electronics/storage-and-processors")],["Wearables",I("consumer-electronics/wearable-devices")]]],
+      ["Daten und Telekommunikation", I("data-and-telecommunications"), [["Breitbandanbindung",I("data-and-telecommunications/broadband-connectivity")],["Rechenzentrum",I("data-and-telecommunications/data-center")],["Optik",I("data-and-telecommunications/optical")]]],
+      ["Möbel und Interieur", I("furniture-interiors")],
+      ["Industrielle Fertigung", I("industrial-manufacturing"), [["Filtration",I("industrial-manufacturing/filtration")],["Haushaltsgeräte",I("industrial-manufacturing/home-appliances")],["Schwermaschinen",I("industrial-manufacturing/heavy-equipment")]]],
+      ["Wartung und Reparatur", I("industrial-maintenance-repair")],
+      ["Medizin", I("medical"), [["Medizinische Einwegprodukte",I("medical/medical-disposables")],["Medizinische Geräte",I("medical/medical-equipment")],["Medizinische Filtration",I("medical/medical-filtration")],["Medizinische Wearables",I("medical/medical-wearables")]]],
+      ["Metalle", I("metals"), [["Aluminiumcoil",I("metals/aluminum-coil")],["Aluminiumkomponenten",I("metals/aluminum-components")],["Edelstahlcoil",I("metals/stainless-steel-coil")],["Stahlcoil",I("metals/steel-coil")],["Stahlkomponenten",I("metals/steel-components")]]],
+      ["Verpackung und Converting", I("packaging-and-converting"), [["Konsumgüterverpackung",I("packaging-and-converting/consumer-goods-packaging")],["E-Commerce",I("packaging-and-converting/e-commerce")],["Flexible Verpackungen",I("packaging-and-converting/flexible-packaging")],["Metallverpackungen",I("packaging-and-converting/metal-packaging")],["Papierlösungen",I("packaging-and-converting/paper-solutions")],["Klebebänder, Etiketten und selbstklebende Grafikfolien",I("packaging-and-converting/tapes-labels-self-adhesive-graphic-films")],["Verpackungsbeschichtungen",I("packaging-and-converting/packaging-coatings")]]],
+      ["Körperhygiene", I("personal-hygiene"), [["Inkontinenzprodukte für Erwachsene",I("personal-hygiene/adult-incontinence")],["Babywindeln",I("personal-hygiene/baby-diapers")],["Damenhygiene",I("personal-hygiene/feminine-care")],["Medizinische Schutzkleidung",I("personal-hygiene/medical-protective-wear")],["Tücher und Handtücher",I("personal-hygiene/tissues-and-towels")]]],
+      ["Energie", I("power"), [["Alternative Energieumwandlung und -speicherung",I("power/alternative-energy-conversion-and-storage")],["Ladeinfrastruktur für Elektrofahrzeuge",I("power/ev-charging-infrastructure")],["Wasserstofflösungen",I("power/hydrogen-solutions")],["Stromversorgungen",I("power/power-supplies")],["Solar",I("power/solar")],["Wind",I("power/wind")]]],
+      ["Halbleiter", I("semiconductor"), [["Halbleiter-Packaging",I("semiconductor/semiconductor-packaging")],["Halbleiter für Rechenzentren",I("semiconductor/semiconductors-for-data-center")],["Halbleiter für Telekommunikation",I("semiconductor/semiconductors-for-telecom")],["Halbleiter für die Automobilindustrie",I("semiconductor/semiconductors-for-automotive")]]],
+      ["Sport und Mode", I("sports-and-fashion"), [["Businessschuhe",I("sports-and-fashion/dress-shoes")],["Mode",I("sports-and-fashion/fashion")],["Sportschuhe",I("sports-and-fashion/sports-shoes")]]],
+      ["Transport", I("transportation"), [["Öffentlicher Nahverkehr",I("transportation/mass-transit")],["Spezialfahrzeuge",I("transportation/specialty-vehicles")]]],
+      ["Humanoide Robotik", I("humanoid-robotics")]
     ]],
 
-    ["Knowledge", "/de/en/knowledge.html", [
-      ["LOCTITE®XPLORE | E-learning", K("elearning/loctite-xplore-landing-page")],
-      ["In-Person Learning", K("in-person-learning")],
-      ["Resource centre", "/de/en/navigation/knowledge/insights.html", [["Articles","/de/en/navigation/knowledge/insights/articles.html"],["Brochures","/de/en/navigation/knowledge/insights/brochures.html"],["Case studies","/de/en/navigation/knowledge/insights/case-studies.html"],["eBooks","/de/en/navigation/knowledge/insights/ebooks.html"],["Webinars","/de/en/navigation/knowledge/insights/webinars.html"],["White papers","/de/en/navigation/knowledge/insights/white-paper.html"]]],
+    ["Wissen", "/de/en/knowledge.html", [
+      ["LOCTITE®XPLORE | E-Learning", K("elearning/loctite-xplore-landing-page")],
+      ["Präsenzschulungen", K("in-person-learning")],
+      ["Ressourcencenter", "/de/en/navigation/knowledge/insights.html", [["Artikel","/de/en/navigation/knowledge/insights/articles.html"],["Broschüren","/de/en/navigation/knowledge/insights/brochures.html"],["Fallstudien","/de/en/navigation/knowledge/insights/case-studies.html"],["eBooks","/de/en/navigation/knowledge/insights/ebooks.html"],["Webinare","/de/en/navigation/knowledge/insights/webinars.html"],["Whitepaper","/de/en/navigation/knowledge/insights/white-paper.html"]]],
       ["Global Innovation Centers", K("global-innovation-centers")]
     ]],
 
     ["Support", "/de/en/support.html", [
-      ["Contact us", "/de/en/support.html", [["Product info and documentation","/de/en/support/product-info.html"],["Technical support","/de/en/support/technical-support.html"],["Regulatory enquiry","/de/en/support/regulatory-inquiry.html"],["Equipment services support","/de/en/support/equipment-services-support.html"],["General enquiry","/de/en/support/general-inquiry.html"]]],
+      ["Kontakt", "/de/en/support.html", [["Produktinfos und Dokumentation","/de/en/support/product-info.html"],["Technischer Support","/de/en/support/technical-support.html"],["Regulatorische Anfrage","/de/en/support/regulatory-inquiry.html"],["Support für Equipment-Services","/de/en/support/equipment-services-support.html"],["Allgemeine Anfrage","/de/en/support/general-inquiry.html"]]],
       ["FAQs", F("").replace("faqs/.html","faqs.html"), [
-        ["Find what you need", F("find-what-you-need"), [["Finding product documents",F("find-what-you-need/finding-product-documents")],["Support",F("find-what-you-need/support")],["eLearning",F("find-what-you-need/elearning")]]],
-        ["Regulatory", F("regulatory")],["How to buy", F("how-to-buy")],["Account and verification", F("account-and-verification")],
-        ["Products and technologies", F("products-and-technologies"), [["General product questions",F("products-and-technologies/general-product-questions")],["Acrylics",F("products-and-technologies/acrylics")],["Anaerobic adhesives",F("products-and-technologies/anaerobic-adhesives")],["Cyanoacrylates",F("products-and-technologies/cyanoacrylates")],["Epoxies",F("products-and-technologies/epoxies")],["Hybrid adhesives",F("products-and-technologies/hybrid-adhesives")],["Light-cure adhesives",F("products-and-technologies/light-cure-adhesives")],["Silicones",F("products-and-technologies/silicones")]]],
-        ["Industries and applications", F("industries-and-applications"), [["Food-safe packaging",F("industries-and-applications/food-safe-packaging")],["Smart maintenance (IIoT) - Loctite Pulse",F("industries-and-applications/smart-maintenance-iiot-loctite-pulse")]]],
-        ["Equipment", F("equipment"), [["Equipment services",F("equipment/equipment-services")],["Standard equipment",F("equipment/standard-equipment")]]]
+        ["Finden, was Sie brauchen", F("find-what-you-need"), [["Produktdokumente finden",F("find-what-you-need/finding-product-documents")],["Support",F("find-what-you-need/support")],["eLearning",F("find-what-you-need/elearning")]]],
+        ["Regulatorisches", F("regulatory")],["So kaufen Sie", F("how-to-buy")],["Konto und Verifizierung", F("account-and-verification")],
+        ["Produkte und Technologien", F("products-and-technologies"), [["Allgemeine Produktfragen",F("products-and-technologies/general-product-questions")],["Acrylate",F("products-and-technologies/acrylics")],["Anaerobe Klebstoffe",F("products-and-technologies/anaerobic-adhesives")],["Cyanacrylate",F("products-and-technologies/cyanoacrylates")],["Epoxidharze",F("products-and-technologies/epoxies")],["Hybridklebstoffe",F("products-and-technologies/hybrid-adhesives")],["Lichthärtende Klebstoffe",F("products-and-technologies/light-cure-adhesives")],["Silikone",F("products-and-technologies/silicones")]]],
+        ["Branchen und Anwendungen", F("industries-and-applications"), [["Lebensmittelsichere Verpackungen",F("industries-and-applications/food-safe-packaging")],["Smarte Wartung (IIoT) – Loctite Pulse",F("industries-and-applications/smart-maintenance-iiot-loctite-pulse")]]],
+        ["Equipment", F("equipment"), [["Equipment-Services",F("equipment/equipment-services")],["Standard-Equipment",F("equipment/standard-equipment")]]]
       ]],
-      ["Find a distributor", "/de/en/support/find-a-distributor.html"],
-      ["Technical library – TDS, SDS", "/de/en/navigation/support/find-a-tds.html"],
-      ["eShop login", "https://eshop.henkel-adhesives.com/login"],
-      ["eShop access request", "/de/en/c/eshop.html"]
+      ["Händler finden", "/de/en/support/find-a-distributor.html"],
+      ["Technische Bibliothek – TDS, SDB", "/de/en/navigation/support/find-a-tds.html"],
+      ["eShop-Login", "https://eshop.henkel-adhesives.com/login"],
+      ["eShop-Zugang anfordern", "/de/en/c/eshop.html"]
     ]]
   ];
 
+  var ALL = {"Produkte":"Alle Produkte","Anwendungen":"Alle Anwendungen","Services":"Alle Services","Marken":"Alle Marken","Branchen":"Alle Branchen","Wissen":"Alles Wissen","Support":"Support-Center"};
   var abs = function (u) { return /^https?:/.test(u) ? u : BASE + u; };
   var el = function (tag, cls, html) { var e = document.createElement(tag); if (cls) e.className = cls; if (html != null) e.innerHTML = html; return e; };
   var esc = function (s) { return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;"); };
@@ -146,7 +147,7 @@
     var twoPane = cats.some(function (c) { return c[2] && c[2].length; });
 
     var head = el("div", "mega__head");
-    var all = el("a", "mega__all", "All " + esc(top[0].toLowerCase())); all.href = abs(top[1]);
+    var all = el("a", "mega__all", (ALL[top[0]]||esc(top[0]))); all.href = abs(top[1]);
     head.appendChild(all);
     inner.appendChild(head);
 
