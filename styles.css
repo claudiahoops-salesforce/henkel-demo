@@ -202,3 +202,22 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid #0a64
   .mega__grid{grid-template-columns:1fr 1fr}
   .nav__item{flex:1 1 100%;border-bottom:1px solid var(--line)}
 }
+
+/* ---- popular products carousel (matches live page) ---- */
+.products h3{font-size:34px;font-weight:700;color:#3a3a3a}
+.carousel-ctl button{display:grid;place-items:center;width:46px;height:46px;border-radius:50%;border:1px solid #d5d5d5;background:#fff;color:#222;padding:0}
+.carousel-ctl button:hover{background:#222;color:#fff;border-color:#222}
+.carousel{gap:0;scrollbar-width:none;padding-bottom:0}
+.carousel::-webkit-scrollbar{display:none}
+.pcard{flex:0 0 20%;border:0;border-radius:0;background:transparent;box-shadow:none!important}
+.pcard a{padding:0 0 12px}
+.pcard__img{height:290px;background:#fff;border-radius:0;margin-bottom:16px;overflow:hidden}
+.pcard__img img{width:100%;height:100%;object-fit:contain;display:block;mix-blend-mode:multiply}
+.pcard__cat{font-size:14px;font-weight:700;color:var(--red);margin-bottom:6px;padding:0 8px}
+.pcard strong{font-size:18px;font-weight:500;color:#3a3a3a;margin-bottom:22px;padding:0 8px}
+.pcard p{font-size:14px;line-height:1.9;color:#3a3a3a;padding:0 8px}
+.dots{display:flex;justify-content:center;gap:14px;margin-top:28px}
+.dots span{width:9px;height:9px;border-radius:50%;background:#ddd}
+.dots span.on{background:var(--red);width:14px;height:14px;margin:-2px 0}
+@media (max-width:1000px){.pcard{flex-basis:50%}}
+@media (max-width:760px){.pcard{flex-basis:80%}}
